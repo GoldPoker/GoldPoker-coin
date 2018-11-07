@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Gpkr
+Comment=Gpkr P2P Cryptocurrency
+Exec=gpkr-qt %u
+Terminal=false
+Type=Application
+Icon=gpkr128
+MimeType=x-scheme-handler/gpkr;
+Categories=Office;Finance;
+Name[en_US]=gpkr-qt.desktop
