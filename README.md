@@ -1,4 +1,4 @@
-Gold Poker Core 1.0.0.2
+Gold Poker Core 1.3.0.0
 =================================================
 
 <p align="center">
