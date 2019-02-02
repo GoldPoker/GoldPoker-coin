@@ -55,12 +55,13 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000007a5e645d8b8dd5ca2decb3b371772978cad4015d47832a41b8085eaa3f3"));
+    (0, uint256("0x000007a5e645d8b8dd5ca2decb3b371772978cad4015d47832a41b8085eaa3f3"))
+    (296700, uint256("0xe0273ceb254c70e15945d26c532afe781f228302a53abce455c88cff63abdc2f"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1530489600, // * UNIX timestamp of last checkpoint block
-    0,          // * total number of transactions between genesis and last checkpoint
+    1548929499, // * UNIX timestamp of last checkpoint block
+    636216,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     0        // * estimated number of transactions per day after checkpoint
 };
@@ -147,7 +148,7 @@ public:
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 100;
-        nModifierUpdateBlock = 1; // we use the version 2 for GPKR
+        nModifierUpdateBlock = 299333; //fake stake update
 
         genesis = CreateGenesisBlock(1530489600, 1209697, 0x1e0ffff0, 1, 50 * COIN);
 
