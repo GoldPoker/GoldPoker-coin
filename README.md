@@ -9,7 +9,7 @@ Gold Poker Core 1.3.1.0
 ## Links:
 
 - Website: https://gold-poker.com
-- Explorer: http://explore.gold-poker.com/
+- Explorer: https://explorer.gold-poker.com/
 - Github: https://github.com/GoldPoker/
 
 
