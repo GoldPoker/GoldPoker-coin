@@ -108,6 +108,9 @@ static const unsigned int MAX_REJECT_MESSAGE_LENGTH = 111;
 /** Enable bloom filter */
  static const bool DEFAULT_PEERBLOOMFILTERS = true;
 
+/** Max Tip Age Variable : ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin */
+ static const int64_t DEFAULT_MAX_TIP_AGE = 6 * 60 * 60;
+
 /** "reject" message codes */
 static const unsigned char REJECT_MALFORMED = 0x01;
 static const unsigned char REJECT_INVALID = 0x10;
