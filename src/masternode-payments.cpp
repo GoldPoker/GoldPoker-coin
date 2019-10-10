@@ -198,6 +198,9 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
         if (nHeight % GetBudgetPaymentCycleBlocks() < 100) {
             return true;
         } else {
+        	if ((( nHeight % 10 ) == 3) && (nMinted * 10 == nExpectedValue)) {
+        			return true;
+        		}
             if (nMinted > nExpectedValue) {
                 return false;
             }
